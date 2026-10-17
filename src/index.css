@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .grid-cols-18 {
+    grid-template-columns: repeat(18, minmax(0, 1fr));
+  }
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+.pu {
+  animation: pu 1s ease-in-out infinite;
+}
+
+@keyframes pu {
+  50% {
+    opacity: 0.35;
+  }
+}
